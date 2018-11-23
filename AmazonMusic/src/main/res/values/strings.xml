@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">music player</string>
+    <string name="offline_songs">离线音乐库</string>
+    <string name="download">最近下载</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="class_main">首页</string>
+    <string name="class_albums">专辑分类</string>
+    <string name="class_singers">歌手分类</string>
+    <string name="class_songs">所有歌曲</string>
+
+    <string name="show_play">显示</string>    
+    <string name="play_left">上一首</string>
+    <string name="play_pause">暂停/播放</string>
+    <string name="play_right">下一首</string>
+</resources>

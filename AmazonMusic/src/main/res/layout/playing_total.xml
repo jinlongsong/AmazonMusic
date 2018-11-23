@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbg"
+    android:orientation="vertical"
+    tools:context="com.example.tabhost_test.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:paddingTop="40dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+  新建播放列表"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/all_music_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/play_list_view" >
+
+            <ImageView
+                android:id="@+id/allmusic_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/cloud_all_music" />
+
+            <TextView
+                android:id="@+id/allmusic_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/allmusic_icon"
+                android:text="全部歌曲"
+                android:textColor="#ffffff"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/allmusic_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allmusic_text1"
+                android:layout_toRightOf="@+id/allmusic_icon"
+                android:text="本地0首"
+                android:textColor="@android:color/darker_gray" />
+        </RelativeLayout>
+
+       
+    </LinearLayout>
+
+</LinearLayout>

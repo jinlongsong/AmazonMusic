@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    tools:context=".MainActivity">
+
+    <!-- The main content view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rBtnAll"
+                style="@style/customStyle"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="@string/class_main"
+                tools:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/rBtnAlbum"
+                style="@style/customStyle"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="@string/class_albums"
+                tools:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/rBtnSinger"
+                style="@style/customStyle"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="@string/class_singers"
+                tools:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/rBtnSong"
+                style="@style/customStyle"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="@string/class_songs"
+                tools:textColor="#ffffff" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/radioGroup"
+            android:background="#000fff">
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/indicator"
+            android:layout_above="@id/play_bottom_layout">
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/play_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#7C6C48"
+            android:clickable="true">
+
+            <ImageButton
+                android:id="@+id/startplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <ImageButton
+                android:id="@+id/shang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/startplay"
+                android:src="@drawable/left_button" />
+
+            <ImageButton
+                android:id="@+id/xia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/startplay"
+                android:src="@drawable/right_button" />
+
+            <TextView
+                android:id="@+id/geci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/show_play"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#303030"
+        android:choiceMode="singleChoice"
+        android:divider="#5B5B5B"
+        android:dividerHeight="0.1dp" />
+</android.support.v4.widget.DrawerLayout>

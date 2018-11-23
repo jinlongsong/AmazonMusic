@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbg"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame" >
+
+    <GridView
+        android:id="@+id/albumGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dip"
+        android:horizontalSpacing="10dip"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip"
+        android:visibility="gone">
+    </GridView >
+    <!---->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/albumRecycleView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

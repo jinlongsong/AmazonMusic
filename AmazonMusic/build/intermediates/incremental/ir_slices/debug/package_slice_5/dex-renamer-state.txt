@@ -1,0 +1,4 @@
+#Thu May 03 18:05:06 CST 2018
+base.0=E\:\\workspace\\AmazonMusic1\\AmazonMusic\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+path.0=classes.dex
+renamed.0=classes.dex

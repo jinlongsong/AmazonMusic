@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="100dip"
+        android:layout_height="120dip" >
+
+        <ImageView
+            android:id="@+id/gridspecial_view1"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_album_plus" />
+
+        <TextView
+            android:id="@+id/album_num"
+            android:layout_width="wrap_content"
+            android:layout_height="17dip"
+            android:layout_below="@id/gridspecial_view1"
+            android:layout_centerHorizontal="true"
+            android:text="专辑名"
+            android:textColor="#cdffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="17dip"
+            android:layout_below="@id/album_num"
+            android:layout_centerHorizontal="true"
+            android:text="歌手名"
+            android:textColor="#cdffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/song_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artist_name"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text="歌曲数"
+            android:textColor="#cdffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

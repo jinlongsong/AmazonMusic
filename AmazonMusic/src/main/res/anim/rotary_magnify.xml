@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:shareInterpolator="false">
+	 
+	 <!-- 缩小的动画  -->
+     <scale
+    	android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    	android:fromXScale="1.0"
+    	android:toXScale="0.1"
+    	android:fromYScale="1.0"
+    	android:toYScale="0.1"
+    	android:pivotX="50%"
+    	android:pivotY="50%"
+    	android:startOffset="2000"
+    	android:duration="2500"></scale>
+    		
+     <!-- 旋转的动画  -->
+     <rotate
+        xmlns:android="http://schemas.android.com/apk/res/android"  
+        android:interpolator="@android:anim/accelerate_interpolator" 
+    	android:fromDegrees="0"
+    	android:toDegrees="-1800"
+    	android:pivotX="50%"
+    	android:pivotY="50%"
+    	android:startOffset="2500"
+    	android:duration="2050"></rotate> 
+    	
+    <!-- X轴平移的动画 -->
+    <translate
+    	android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    	android:fromXDelta="0"
+    	android:toXDelta="-580"
+    	android:startOffset="3200"
+    	android:duration="1600"></translate>
+    	
+     <!-- Y轴平移的动画  -->
+     <translate
+    	android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    	android:fromYDelta="0"
+    	android:toYDelta="-800"
+    	android:startOffset="3300"
+    	android:duration="1600"></translate> 
+
+</set>

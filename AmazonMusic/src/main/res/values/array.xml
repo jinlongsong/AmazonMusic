@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_array">
+        <item>近期活动</item>        
+        <item>音乐库</item>        
+        <item>设置</item>        
+        <item>帮助</item>           
+    </string-array>
+    
+    <string-array name="song_list">
+        <item>爱你一万年</item>        
+        <item>演员</item>        
+        <item>绅士</item>        
+        <item>不将就</item>           
+    </string-array>
+    
+</resources>
